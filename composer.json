@@ -1,0 +1,26 @@
+{
+    "name": "kodhub/module-darkmode-admin",
+    "description": "Magento2 Dark Mode for AdminUI",
+    "type": "magento2-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mage2Gen",
+            "email": "info@mage2gen.com"
+        },
+        {
+            "name": "İsmail Çakır",
+            "email": "ismailcakirnet@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Kodhub\\DarkMode\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}

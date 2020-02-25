@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<tab id="kodhub" sortOrder="999" translate="label">
+			<label>kodhub</label>
+		</tab>
+		<section id="darkmodeadmin" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+			<label>darkmodeadmin</label>
+			<tab>kodhub</tab>
+			<resource>Kodhub_DarkMode::config_kodhub_darkmode</resource>
+			<group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>general</label>
+				<field id="is_enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>is_enabled</label>
+					<comment/>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>
